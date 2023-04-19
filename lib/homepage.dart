@@ -25,9 +25,6 @@ class _HomePageState extends State<HomePage> {
             Container(
               height: 600,
               width: screenSize.width,
-              // color: Colors.black,
-              // foregroundDecoration: const BoxDecoration(
-              //     backgroundBlendMode: BlendMode.darken, color: Colors.black45),
               decoration: const BoxDecoration(
                   image: DecorationImage(
                 image: AssetImage("images/bgimage1.jpg"),
@@ -74,21 +71,21 @@ class _HomePageState extends State<HomePage> {
               child: Center(
                 child: Text(
                   "WE SUPPORT GENDER JUSTICE MOVEMENTS TO\n CREATE MEANINGFUL CHANGE THAT WILL LAST\n BEYOND OUR LIFETIMES.",
-                  style: displayStyle(30, tertiary),
+                  style: antonStyle(30, tertiary),
                 ),
               ),
             ),
             Container(
-              height: 300,
               width: screenSize.width,
               decoration: BoxDecoration(color: secondary),
               child: Padding(
-                padding:
-                    EdgeInsets.symmetric(horizontal: screenSize.width * 0.025),
+                padding: EdgeInsets.symmetric(
+                    horizontal: screenSize.width * 0.025, vertical: 50),
                 child: Center(
                   child: Wrap(
                       direction: Axis.horizontal,
-                      spacing: 200,
+                      runSpacing: 30.0,
+                      spacing: 130,
                       crossAxisAlignment: WrapCrossAlignment.center,
                       children: [
                         Column(
@@ -98,16 +95,26 @@ class _HomePageState extends State<HomePage> {
                               Icons.abc,
                               size: 50,
                             ),
-                            yMargin(5),
+                            yMargin(10),
                             Text(
-                              "Who we are",
-                              style: normalStyle(30, primary),
+                              "WHO WE ARE",
+                              textAlign: TextAlign.center,
+                              style: interStyle(15, primary),
                             ),
+                            yMargin(5),
                             Text(
                               "A feminist fund with an introspectal\n lens",
-                              style: normalStyle(20, primary),
+                              textAlign: TextAlign.center,
+                              style: antonStyle(25, primary),
                             ),
-                            GestureDetector(child: const Text("Learn More"))
+                            yMargin(10),
+                            GestureDetector(
+                                child: Text(
+                              "Learn More",
+                              style: normalStyle(15, primary,
+                                  decoration: TextDecoration.underline),
+                              textAlign: TextAlign.center,
+                            ))
                           ],
                         ),
                         Column(
@@ -117,16 +124,26 @@ class _HomePageState extends State<HomePage> {
                               Icons.abc,
                               size: 50,
                             ),
+                            yMargin(10),
+                            Text(
+                              "WHO WE DO",
+                              textAlign: TextAlign.center,
+                              style: interStyle(15, primary),
+                            ),
                             yMargin(5),
                             Text(
-                              "Who we are",
-                              style: normalStyle(30, primary),
+                              "Grantmaking and advocacy to\n challenge the status quo",
+                              textAlign: TextAlign.center,
+                              style: antonStyle(25, primary),
                             ),
-                            Text(
-                              "Grantmaking and advocacy\n to change the status quo",
-                              style: normalStyle(20, primary),
-                            ),
-                            GestureDetector(child: const Text("Learn More"))
+                            yMargin(10),
+                            GestureDetector(
+                                child: Text(
+                              "Learn More",
+                              style: normalStyle(15, primary,
+                                  decoration: TextDecoration.underline),
+                              textAlign: TextAlign.center,
+                            ))
                           ],
                         ),
                         Column(
@@ -136,22 +153,46 @@ class _HomePageState extends State<HomePage> {
                               Icons.abc,
                               size: 50,
                             ),
+                            yMargin(10),
+                            Text(
+                              "HOW WE WORK",
+                              textAlign: TextAlign.center,
+                              style: interStyle(15, primary),
+                            ),
                             yMargin(5),
                             Text(
-                              "Who we are",
-                              style: normalStyle(30, primary),
+                              "Support for grassroots movements to\n lead the way",
+                              textAlign: TextAlign.center,
+                              style: antonStyle(25, primary),
                             ),
-                            Text(
-                              "Support for grassroot movements\n to change the way",
-                              style: normalStyle(20, primary),
-                            ),
-                            GestureDetector(child: const Text("Learn More"))
+                            yMargin(10),
+                            GestureDetector(
+                                child: Text(
+                              "Learn More",
+                              style: normalStyle(15, primary,
+                                  decoration: TextDecoration.underline),
+                              textAlign: TextAlign.center,
+                            ))
                           ],
                         ),
                       ]),
                 ),
               ),
             ),
+            Container(
+              width: screenSize.width,
+              height: screenSize.width < 700 ? 800 : null,
+              decoration: BoxDecoration(color: primary),
+              child: Wrap(
+                children: [
+                  Image.asset("images/bgimage1.jpg",
+                      width: screenSize.width < 700
+                          ? screenSize.width
+                          : screenSize.width * 0.5),
+                  Column()
+                ],
+              ),
+            )
           ],
         ),
       ),
