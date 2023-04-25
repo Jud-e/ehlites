@@ -22,21 +22,41 @@ class _InvolvementState extends State<Involvement> {
             width: 300,
             height: 400,
             child: Column(
+              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.asset(
                   "images/bgimage1.jpg",
-                  height: 100,
+                  height: 150,
+                  width: double.infinity,
                   fit: BoxFit.fill,
                 ),
                 yMargin(15),
-                Text(
-                  'Make an Impact',
-                  style: thickStyle(28, black),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Column(
+                        children: [
+                          Text(
+                            'Make an Impact',
+                            style: thickStyle(28, black),
+                          ),
+                          Text(
+                            "lorem ispum description something something",
+                            style: interStyle(20, Colors.grey),
+                          ),
+                        ],
+                      ),
+                      ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "JOIN",
+                            style: normalStyle(10, primary),
+                          ))
+                    ],
+                  ),
                 ),
-                Text(
-                  "lorem ispum description something something",
-                  style: interStyle(20, Colors.grey),
-                )
               ],
             ),
           ),

@@ -234,7 +234,7 @@ class _HomePageState extends State<HomePage> {
               decoration: BoxDecoration(color: primary),
               child: const Padding(
                 padding: EdgeInsets.all(10.0),
-                child: Center(child: Involvement()),
+                child: Involvement(),
               ),
             ),
           ],
