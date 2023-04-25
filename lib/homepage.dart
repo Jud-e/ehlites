@@ -229,11 +229,20 @@ class _HomePageState extends State<HomePage> {
             ),
             Container(
               width: screenSize.width,
-              height: screenSize.width < 700 ? null : 450,
+              height: screenSize.width < 700 ? null : 550,
               decoration: BoxDecoration(color: primary),
-              child: const Padding(
-                padding: EdgeInsets.all(10.0),
-                child: Center(child: Involvement()),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Column(
+                  children: [
+                    Text(
+                      "data",
+                      style: thickStyle(30, black),
+                    ),
+                    yMargin(20),
+                    const Center(child: Involvement()),
+                  ],
+                ),
               ),
             ),
           ],
