@@ -55,8 +55,7 @@ class _HomePageState extends State<HomePage> {
                     ElevatedButton(
                         onPressed: () {},
                         style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStateProperty.all(tertiary)),
+                            backgroundColor: MaterialStateProperty.all(purple)),
                         child: const Padding(
                           padding: EdgeInsets.all(10.0),
                           child: Text("See our impact"),
@@ -75,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                   textAlign: TextAlign.center,
                   style: antonStyle(
                     40,
-                    tertiary,
+                    purple,
                   ),
                 ),
               ),
@@ -234,7 +233,7 @@ class _HomePageState extends State<HomePage> {
               decoration: BoxDecoration(color: primary),
               child: const Padding(
                 padding: EdgeInsets.all(10.0),
-                child: Involvement(),
+                child: Center(child: Involvement()),
               ),
             ),
           ],
