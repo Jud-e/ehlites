@@ -9,7 +9,7 @@ TextStyle normalStyle(
   String? family,
   double? height,
 }) {
-  return GoogleFonts.mukta(
+  return GoogleFonts.poppins(
     fontSize: size,
     fontStyle: fontStyle,
     color: color,
@@ -27,7 +27,7 @@ TextStyle thickStyle(
   String? family,
   double? height,
 }) {
-  return GoogleFonts.mukta(
+  return GoogleFonts.poppins(
     fontSize: size,
     fontStyle: fontStyle,
     color: color,
@@ -45,7 +45,7 @@ TextStyle heavyStyle(
   String? family,
   double? height,
 }) {
-  return GoogleFonts.mukta(
+  return GoogleFonts.poppins(
     fontSize: size,
     fontStyle: fontStyle,
     color: color,

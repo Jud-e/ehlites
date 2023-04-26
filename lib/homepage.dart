@@ -191,11 +191,13 @@ class _HomePageState extends State<HomePage> {
               child: Wrap(
                 children: [
                   Image.asset("images/bgimage1.jpg",
+                      fit: BoxFit.fill,
                       height: screenSize.width < 700 ? 350 : 500,
                       width: screenSize.width < 700
                           ? screenSize.width
                           : screenSize.width * 0.5),
-                  SizedBox(
+                  Container(
+                    decoration: BoxDecoration(color: Colors.red),
                     height: screenSize.width < 700 ? 350 : 500,
                     width: screenSize.width < 700
                         ? screenSize.width
@@ -227,19 +229,20 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            yMargin(50),
             Container(
               width: screenSize.width,
-              height: screenSize.width < 700 ? null : 550,
+              // height: screenSize.width < 700 ? null : 550,
               decoration: BoxDecoration(color: primary),
               child: Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Column(
                   children: [
                     Text(
-                      "data",
+                      "Get Involved",
                       style: thickStyle(30, black),
                     ),
-                    yMargin(20),
+                    yMargin(50),
                     const Center(child: Involvement()),
                   ],
                 ),

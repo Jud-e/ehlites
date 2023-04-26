@@ -20,7 +20,7 @@ class _InvolvementState extends State<Involvement> {
           elevation: 2,
           clipBehavior: Clip.hardEdge,
           child: SizedBox(
-            width: 300,
+            width: 350,
             height: 400,
             child: Column(
               // crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,7 +33,8 @@ class _InvolvementState extends State<Involvement> {
                 ),
                 yMargin(15),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 30.0, vertical: 10.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -41,7 +42,7 @@ class _InvolvementState extends State<Involvement> {
                         children: [
                           Text(
                             'Make an Impact',
-                            style: thickStyle(25, black),
+                            style: thickStyle(20, black),
                           ),
                           Text(
                             "lorem ispum description something something",
@@ -59,7 +60,7 @@ class _InvolvementState extends State<Involvement> {
                             padding: const EdgeInsets.symmetric(
                                 vertical: 10.0, horizontal: 15.0),
                             child: Text(
-                              "JOIN",
+                              "LEAD A CHAPTER",
                               style: normalStyle(15, primary),
                             ),
                           ))
@@ -75,7 +76,7 @@ class _InvolvementState extends State<Involvement> {
           elevation: 2,
           clipBehavior: Clip.hardEdge,
           child: SizedBox(
-            width: 300,
+            width: 350,
             height: 400,
             child: Column(
               // crossAxisAlignment: CrossAxisAlignment.start,
@@ -88,15 +89,16 @@ class _InvolvementState extends State<Involvement> {
                 ),
                 yMargin(15),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 30.0, vertical: 10.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Column(
                         children: [
                           Text(
-                            'Make an Impact',
-                            style: thickStyle(25, black),
+                            'Build Skills',
+                            style: thickStyle(20, black),
                           ),
                           Text(
                             "lorem ispum description something something",
@@ -114,7 +116,7 @@ class _InvolvementState extends State<Involvement> {
                             padding: const EdgeInsets.symmetric(
                                 vertical: 10.0, horizontal: 15.0),
                             child: Text(
-                              "JOIN",
+                              "VOLUNTEER",
                               style: normalStyle(15, primary),
                             ),
                           ))
@@ -130,7 +132,7 @@ class _InvolvementState extends State<Involvement> {
           elevation: 2,
           clipBehavior: Clip.hardEdge,
           child: SizedBox(
-            width: 300,
+            width: 350,
             height: 400,
             child: Column(
               // crossAxisAlignment: CrossAxisAlignment.start,
@@ -143,15 +145,16 @@ class _InvolvementState extends State<Involvement> {
                 ),
                 yMargin(15),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 30.0, vertical: 10.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Column(
                         children: [
                           Text(
-                            'Make an Impact',
-                            style: thickStyle(25, black),
+                            'Join fellow change makers',
+                            style: thickStyle(20, black),
                           ),
                           Text(
                             "lorem ispum description something something",
@@ -169,7 +172,7 @@ class _InvolvementState extends State<Involvement> {
                             padding: const EdgeInsets.symmetric(
                                 vertical: 10.0, horizontal: 15.0),
                             child: Text(
-                              "JOIN",
+                              "JOIN A CHAPTER",
                               style: normalStyle(15, primary),
                             ),
                           ))
