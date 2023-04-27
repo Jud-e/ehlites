@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'constants.dart';
-import 'utilities/text_style_util.dart';
+import 'text_style_util.dart';
 
 class CustomDrawer extends StatefulWidget {
   const CustomDrawer({super.key});

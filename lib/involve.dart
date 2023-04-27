@@ -1,4 +1,4 @@
-import 'package:ehlites/constants.dart';
+import 'package:ehlites/utilities/constants.dart';
 import 'package:ehlites/utilities/colors.dart';
 import 'package:ehlites/utilities/text_style_util.dart';
 import 'package:flutter/material.dart';

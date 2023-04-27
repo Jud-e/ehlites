@@ -1,7 +1,8 @@
-import 'package:ehlites/constants.dart';
-import 'package:ehlites/drawer.dart';
+import 'package:ehlites/initiatives.dart';
+import 'package:ehlites/utilities/constants.dart';
+import 'package:ehlites/utilities/drawer.dart';
 import 'package:ehlites/involve.dart';
-import 'package:ehlites/navbar_content.dart';
+import 'package:ehlites/utilities/navbar_content.dart';
 import 'package:ehlites/utilities/colors.dart';
 import 'package:ehlites/utilities/text_style_util.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: PreferredSize(
           preferredSize: Size(screenSize.width, 700.0),
-          child: screenSize.width < 760 ? CustomDrawer() : TopNavContent()),
+          child: screenSize.width < 760
+              ? const CustomDrawer()
+              : const TopNavContent()),
       // endDrawer: CustomDrawer(),
       body: SingleChildScrollView(
         child: Column(
@@ -199,7 +202,7 @@ class _HomePageState extends State<HomePage> {
                           ? screenSize.width
                           : screenSize.width * 0.5),
                   Container(
-                    decoration: BoxDecoration(color: Colors.red),
+                    decoration: BoxDecoration(color: primary),
                     height: screenSize.width < 700 ? 350 : 500,
                     width: screenSize.width < 700
                         ? screenSize.width
@@ -263,6 +266,7 @@ class _HomePageState extends State<HomePage> {
                           ? screenSize.width
                           : screenSize.width * 0.5),
                   Container(
+                    // ignore: prefer_const_constructors
                     decoration: BoxDecoration(color: Colors.red),
                     height: screenSize.width < 700 ? 350 : 500,
                     width: screenSize.width < 700
@@ -297,18 +301,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             yMargin(10),
-            Container(
-              width: screenSize.width,
-              height: screenSize.width < 700 ? 700 : 450,
-              child: Column(
-                children: [
-                  Row(
-                    children: [Text("data")],
-                  ),
-                  ElevatedButton(onPressed: () {}, child: Text("eyo"))
-                ],
-              ),
-            )
+            SizedBox(
+                width: screenSize.width,
+                height: screenSize.width < 700 ? 700 : 450,
+                child: const Initiative())
           ],
         ),
       ),
