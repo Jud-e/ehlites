@@ -1,4 +1,5 @@
 import 'package:ehlites/constants.dart';
+import 'package:ehlites/drawer.dart';
 import 'package:ehlites/involve.dart';
 import 'package:ehlites/navbar_content.dart';
 import 'package:ehlites/utilities/colors.dart';
@@ -19,7 +20,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: PreferredSize(
           preferredSize: Size(screenSize.width, 700.0),
-          child: const TopNavContent()),
+          child: screenSize.width < 760 ? CustomDrawer() : TopNavContent()),
+      // endDrawer: CustomDrawer(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -248,6 +250,65 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+            Container(
+              width: screenSize.width,
+              height: screenSize.width < 700 ? 700 : 500,
+              decoration: BoxDecoration(color: primary),
+              child: Wrap(
+                children: [
+                  Image.asset("images/bgimage1.jpg",
+                      fit: BoxFit.fill,
+                      height: screenSize.width < 700 ? 350 : 500,
+                      width: screenSize.width < 700
+                          ? screenSize.width
+                          : screenSize.width * 0.5),
+                  Container(
+                    decoration: BoxDecoration(color: Colors.red),
+                    height: screenSize.width < 700 ? 350 : 500,
+                    width: screenSize.width < 700
+                        ? screenSize.width
+                        : screenSize.width * 0.5,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 50.84),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Heading",
+                            style: thickStyle(30, black),
+                          ),
+                          Text(
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi eu",
+                            style: normalStyle(20, black),
+                          ),
+                          yMargin(20),
+                          ElevatedButton(
+                              onPressed: () {},
+                              child: const Padding(
+                                padding: EdgeInsets.all(10.0),
+                                child: Text("DONATE"),
+                              ))
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            yMargin(10),
+            Container(
+              width: screenSize.width,
+              height: screenSize.width < 700 ? 700 : 450,
+              child: Column(
+                children: [
+                  Row(
+                    children: [Text("data")],
+                  ),
+                  ElevatedButton(onPressed: () {}, child: Text("eyo"))
+                ],
+              ),
+            )
           ],
         ),
       ),
