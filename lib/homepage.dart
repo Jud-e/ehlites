@@ -1,11 +1,12 @@
-import 'package:ehlites/initiatives.dart';
-import 'package:ehlites/utilities/constants.dart';
-import 'package:ehlites/utilities/drawer.dart';
-import 'package:ehlites/involve.dart';
-import 'package:ehlites/utilities/navbar_content.dart';
-import 'package:ehlites/utilities/colors.dart';
-import 'package:ehlites/utilities/text_style_util.dart';
 import 'package:flutter/material.dart';
+
+import 'initiatives.dart';
+import 'involve.dart';
+import 'utilities/colors.dart';
+import 'utilities/constants.dart';
+import 'utilities/drawer.dart';
+import 'utilities/navbar_content.dart';
+import 'utilities/text_style_util.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -21,9 +22,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: PreferredSize(
           preferredSize: Size(screenSize.width, 700.0),
-          child: screenSize.width < 760
-              ? const CustomDrawer()
-              : const TopNavContent()),
+          child: screenSize.width < 760 ? const CustomDrawer() : const TopNavContent()),
       // endDrawer: CustomDrawer(),
       body: SingleChildScrollView(
         child: Column(
@@ -38,8 +37,7 @@ class _HomePageState extends State<HomePage> {
               )),
               child: Padding(
                 padding: EdgeInsets.symmetric(
-                    horizontal: screenSize.width * 0.124,
-                    vertical: screenSize.height * 0.124),
+                    horizontal: screenSize.width * 0.124, vertical: screenSize.height * 0.124),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -59,8 +57,7 @@ class _HomePageState extends State<HomePage> {
                     yMargin(5.0),
                     ElevatedButton(
                         onPressed: () {},
-                        style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(purple)),
+                        style: ButtonStyle(backgroundColor: MaterialStateProperty.all(purple)),
                         child: const Padding(
                           padding: EdgeInsets.all(10.0),
                           child: Text("See our impact"),
@@ -89,8 +86,7 @@ class _HomePageState extends State<HomePage> {
               width: screenSize.width,
               decoration: BoxDecoration(color: yellow),
               child: Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: screenSize.width * 0.025, vertical: 50),
+                padding: EdgeInsets.symmetric(horizontal: screenSize.width * 0.025, vertical: 50),
                 child: Center(
                   child: Wrap(
                       direction: Axis.horizontal,
@@ -121,8 +117,7 @@ class _HomePageState extends State<HomePage> {
                             GestureDetector(
                                 child: Text(
                               "Learn More",
-                              style: normalStyle(15, purple,
-                                  decoration: TextDecoration.underline),
+                              style: normalStyle(15, purple, decoration: TextDecoration.underline),
                               textAlign: TextAlign.center,
                             ))
                           ],
@@ -150,8 +145,7 @@ class _HomePageState extends State<HomePage> {
                             GestureDetector(
                                 child: Text(
                               "Learn More",
-                              style: normalStyle(15, purple,
-                                  decoration: TextDecoration.underline),
+                              style: normalStyle(15, purple, decoration: TextDecoration.underline),
                               textAlign: TextAlign.center,
                             ))
                           ],
@@ -179,8 +173,7 @@ class _HomePageState extends State<HomePage> {
                             GestureDetector(
                                 child: Text(
                               "Learn More",
-                              style: normalStyle(15, purple,
-                                  decoration: TextDecoration.underline),
+                              style: normalStyle(15, purple, decoration: TextDecoration.underline),
                               textAlign: TextAlign.center,
                             ))
                           ],
@@ -196,17 +189,13 @@ class _HomePageState extends State<HomePage> {
               child: Wrap(
                 children: [
                   Image.asset("images/bgimage1.jpg",
-                      fit: BoxFit.fill,
+                      fit: BoxFit.cover,
                       height: screenSize.width < 700 ? 350 : 500,
-                      width: screenSize.width < 700
-                          ? screenSize.width
-                          : screenSize.width * 0.5),
+                      width: screenSize.width < 700 ? screenSize.width : screenSize.width * 0.5),
                   Container(
                     decoration: BoxDecoration(color: primary),
                     height: screenSize.width < 700 ? 350 : 500,
-                    width: screenSize.width < 700
-                        ? screenSize.width
-                        : screenSize.width * 0.5,
+                    width: screenSize.width < 700 ? screenSize.width : screenSize.width * 0.5,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 50.0),
                       child: Column(
@@ -260,18 +249,14 @@ class _HomePageState extends State<HomePage> {
               child: Wrap(
                 children: [
                   Image.asset("images/bgimage1.jpg",
-                      fit: BoxFit.fill,
+                      fit: BoxFit.cover,
                       height: screenSize.width < 700 ? 350 : 500,
-                      width: screenSize.width < 700
-                          ? screenSize.width
-                          : screenSize.width * 0.5),
+                      width: screenSize.width < 700 ? screenSize.width : screenSize.width * 0.5),
                   Container(
                     // ignore: prefer_const_constructors
                     decoration: BoxDecoration(color: Colors.red),
                     height: screenSize.width < 700 ? 350 : 500,
-                    width: screenSize.width < 700
-                        ? screenSize.width
-                        : screenSize.width * 0.5,
+                    width: screenSize.width < 700 ? screenSize.width : screenSize.width * 0.5,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 50.84),
                       child: Column(
