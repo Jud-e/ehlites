@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'initiatives.dart';
 import 'involve.dart';
-import 'utilities/colors.dart';
-import 'utilities/constants.dart';
-import 'utilities/drawer.dart';
-import 'utilities/navbar_content.dart';
-import 'utilities/text_style_util.dart';
+import '../utilities/colors.dart';
+import '../utilities/constants.dart';
+import '../utilities/drawer.dart';
+import '../utilities/navbar_content.dart';
+import '../utilities/text_style_util.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

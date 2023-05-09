@@ -1,4 +1,4 @@
-import 'package:ehlites/homepage.dart';
+import 'package:ehlites/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {

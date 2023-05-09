@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'utilities/colors.dart';
-import 'utilities/constants.dart';
-import 'utilities/text_style_util.dart';
+import '../utilities/colors.dart';
+import '../utilities/constants.dart';
+import '../utilities/text_style_util.dart';
 
 class Involvement extends StatefulWidget {
   const Involvement({super.key});
@@ -34,7 +34,8 @@ class _InvolvementState extends State<Involvement> {
                 ),
                 yMargin(15),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 30.0, vertical: 10.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -53,9 +54,12 @@ class _InvolvementState extends State<Involvement> {
                       yMargin(60.0),
                       ElevatedButton(
                           onPressed: () {},
-                          style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(purple)),
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStatePropertyAll(purple)),
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 10.0, horizontal: 15.0),
                             child: Text(
                               "LEAD A CHAPTER",
                               style: normalStyle(15, primary),
@@ -86,7 +90,8 @@ class _InvolvementState extends State<Involvement> {
                 ),
                 yMargin(15),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 30.0, vertical: 10.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -105,9 +110,12 @@ class _InvolvementState extends State<Involvement> {
                       yMargin(60.0),
                       ElevatedButton(
                           onPressed: () {},
-                          style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(purple)),
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStatePropertyAll(purple)),
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 10.0, horizontal: 15.0),
                             child: Text(
                               "VOLUNTEER",
                               style: normalStyle(15, primary),
@@ -138,7 +146,8 @@ class _InvolvementState extends State<Involvement> {
                 ),
                 yMargin(15),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 30.0, vertical: 10.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -157,9 +166,12 @@ class _InvolvementState extends State<Involvement> {
                       yMargin(60.0),
                       ElevatedButton(
                           onPressed: () {},
-                          style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(purple)),
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStatePropertyAll(purple)),
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 10.0, horizontal: 15.0),
                             child: Text(
                               "JOIN A CHAPTER",
                               style: normalStyle(15, primary),
