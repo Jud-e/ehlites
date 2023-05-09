@@ -1,3 +1,4 @@
+import 'package:ehlites/pages/footer.dart';
 import 'package:ehlites/pages/subscribe.dart';
 import 'package:flutter/material.dart';
 
@@ -313,6 +314,10 @@ class _HomePageState extends State<HomePage> {
               height: 229,
               width: screenSize.width,
               child: const Subscribe(),
+            ),
+            SizedBox(
+              width: screenSize.width,
+              child: const Footer(),
             )
           ],
         ),
