@@ -1,4 +1,5 @@
 import 'package:ehlites/utilities/colors.dart';
+import 'package:ehlites/utilities/constants.dart';
 import 'package:ehlites/utilities/text_style_util.dart';
 import 'package:flutter/material.dart';
 
@@ -29,12 +30,34 @@ class _InitiativeState extends State<Initiative> {
                   : screenSize.width * 0.5,
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
+                    const EdgeInsets.symmetric(horizontal: 0, vertical: 50),
                 child: Column(
                   children: [
                     Text(
                       "I4G Initiatives",
-                      style: thickStyle(30, black),
+                      style: heavyStyle(30, black),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: secondary,
+                          borderRadius: BorderRadius.circular(50)),
+                      height: 10,
+                      width: 50,
+                      // color: secondary,
+                    ),
+                    yMargin(30),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.abc,
+                          color: secondary,
+                        ),
+                        xMargin(10),
+                        Text(
+                          "data",
+                          style: thickStyle(20, black),
+                        )
+                      ],
                     )
                   ],
                 ),
