@@ -221,14 +221,20 @@ class _HomePageState extends State<HomePage> {
                             style: thickStyle(30, black),
                           ),
                           Text(
-                            "Event Description",
+                            "orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla est purus, ultrices in porttitor in, accumsan non quam. Nam consectetur porttitor rhoncus. Curabitur eu est et leo feugiat auctor vel quis lorem. Ut et ligula dolor, sit amet consequat lorem. ",
                             style: normalStyle(20, black),
                           ),
                           ElevatedButton(
                               onPressed: () {},
-                              child: const Padding(
-                                padding: EdgeInsets.all(10.0),
-                                child: Text("SIGN UP HERE"),
+                              style: ButtonStyle(
+                                  backgroundColor:
+                                      MaterialStateProperty.all(secondary)),
+                              child: Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Text(
+                                  "SIGN UP HERE",
+                                  style: normalStyle(20, primary),
+                                ),
                               ))
                         ],
                       ),
@@ -292,9 +298,15 @@ class _HomePageState extends State<HomePage> {
                           yMargin(20),
                           ElevatedButton(
                               onPressed: () {},
-                              child: const Padding(
-                                padding: EdgeInsets.all(10.0),
-                                child: Text("DONATE"),
+                              style: ButtonStyle(
+                                  backgroundColor:
+                                      MaterialStateProperty.all(secondary)),
+                              child: Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Text(
+                                  "DONATE",
+                                  style: normalStyle(20, primary),
+                                ),
                               ))
                         ],
                       ),
@@ -315,10 +327,10 @@ class _HomePageState extends State<HomePage> {
               width: screenSize.width,
               child: const Subscribe(),
             ),
-            SizedBox(
-              width: screenSize.width,
-              child: const Footer(),
-            )
+            // SizedBox(
+            //   width: screenSize.width,
+            //   child: const Footer(),
+            // )
           ],
         ),
       ),

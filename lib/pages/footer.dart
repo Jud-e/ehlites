@@ -5,6 +5,12 @@ class Footer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Wrap(
+      children: [
+        ListView(
+          children: [Text("data")],
+        )
+      ],
+    );
   }
 }
