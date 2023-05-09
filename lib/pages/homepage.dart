@@ -1,3 +1,4 @@
+import 'package:ehlites/pages/subscribe.dart';
 import 'package:flutter/material.dart';
 
 import 'initiatives.dart';
@@ -307,6 +308,12 @@ class _HomePageState extends State<HomePage> {
                 height: screenSize.width < 700 ? 770 : 750,
                 child: const Initiative()),
             yMargin(20),
+            Container(
+              color: black,
+              height: 229,
+              width: screenSize.width,
+              child: const Subscribe(),
+            )
           ],
         ),
       ),
