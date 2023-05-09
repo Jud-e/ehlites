@@ -30,12 +30,12 @@ class _InitiativeState extends State<Initiative> {
                   : screenSize.width * 0.5,
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 0, vertical: 50),
+                    const EdgeInsets.symmetric(horizontal: 30, vertical: 50),
                 child: Column(
                   children: [
                     Text(
                       "I4G Initiatives",
-                      style: heavyStyle(30, black),
+                      style: thickStyle(30, black),
                     ),
                     Container(
                       decoration: BoxDecoration(
@@ -59,14 +59,71 @@ class _InitiativeState extends State<Initiative> {
                           style: thickStyle(20, black),
                         )
                       ],
-                    )
+                    ),
+                    yMargin(10),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla est purus, ultrices in porttitor in, accumsan non quam. Nam consectetur porttitor rhoncus. Curabitur eu est et leo feugiat auctor vel quis lorem. Ut et ligula dolor, sit amet consequat lorem. ",
+                      style: normalStyle(15, black),
+                    ),
+                    yMargin(20),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.abc,
+                          size: 60,
+                          color: secondary,
+                        ),
+                        xMargin(15),
+                        Text(
+                          "Scholarship",
+                          style: thickStyle(20, black),
+                        )
+                      ],
+                    ),
+                    yMargin(10),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla est purus, ultrices in porttitor in, accumsan non quam. Nam consectetur porttitor rhoncus. Curabitur eu est et leo feugiat auctor vel quis lorem. Ut et ligula dolor, sit amet consequat lorem. ",
+                      style: normalStyle(15, black),
+                    ),
+                    yMargin(20),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.abc,
+                          size: 60,
+                          color: secondary,
+                        ),
+                        xMargin(15),
+                        Text(
+                          "Scholarship",
+                          style: thickStyle(20, black),
+                        )
+                      ],
+                    ),
+                    yMargin(10),
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla est purus, ultrices in porttitor in, accumsan non quam. Nam consectetur porttitor rhoncus. Curabitur eu est et leo feugiat auctor vel quis lorem. Ut et ligula dolor, sit amet consequat lorem. ",
+                      style: normalStyle(15, black),
+                    ),
                   ],
                 ),
               ),
             )
           ],
         ),
-        ElevatedButton(onPressed: () {}, child: Text("eyo"))
+        ElevatedButton(
+            onPressed: () {},
+            style: ButtonStyle(
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0))),
+                backgroundColor: MaterialStateProperty.all(secondary)),
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text(
+                "SUPPORT THE MISSION",
+                style: normalStyle(20, primary),
+              ),
+            ))
       ],
     );
   }
