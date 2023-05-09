@@ -50,11 +50,12 @@ class _InitiativeState extends State<Initiative> {
                       children: [
                         Icon(
                           Icons.abc,
+                          size: 60,
                           color: secondary,
                         ),
-                        xMargin(10),
+                        xMargin(15),
                         Text(
-                          "data",
+                          "Scholarship",
                           style: thickStyle(20, black),
                         )
                       ],
