@@ -63,10 +63,14 @@ class _HomePageState extends State<HomePage> {
                     ElevatedButton(
                         onPressed: () {},
                         style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(purple)),
-                        child: const Padding(
-                          padding: EdgeInsets.all(10.0),
-                          child: Text("See our impact"),
+                            backgroundColor:
+                                MaterialStateProperty.all(secondary)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Text(
+                            "SEE OUR IMPACT",
+                            style: normalStyle(20, primary),
+                          ),
                         ))
                   ],
                 ),
