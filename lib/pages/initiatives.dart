@@ -25,6 +25,7 @@ class _InitiativeState extends State<Initiative> {
                   width: screenSize.width * 0.5, child: Text("dissapear")),
             ),
             SizedBox(
+              // height: 1000,
               width: screenSize.width < 700
                   ? screenSize.width
                   : screenSize.width * 0.5,

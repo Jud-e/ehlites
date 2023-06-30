@@ -322,7 +322,7 @@ class _HomePageState extends State<HomePage> {
             yMargin(10),
             SizedBox(
                 width: screenSize.width,
-                height: screenSize.width < 700 ? 770 : 750,
+                // height: screenSize.width < 700 ? 800 : 750,
                 child: const Initiative()),
             yMargin(20),
             Container(
