@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../utilities/colors.dart';
-import '../utilities/constants.dart';
-import '../utilities/text_style_util.dart';
+import '../../utilities/colors.dart';
+import '../../utilities/constants.dart';
+import '../../utilities/text_style_util.dart';
 
 class Involvement extends StatefulWidget {
   const Involvement({super.key});

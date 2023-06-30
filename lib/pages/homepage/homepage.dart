@@ -1,14 +1,13 @@
-import 'package:ehlites/pages/footer.dart';
+// import 'package:ehlites/pages/footer.dart';
 import 'package:ehlites/pages/subscribe.dart';
 import 'package:flutter/material.dart';
-
-import 'initiatives.dart';
+import 'package:ehlites/pages/homepage/initiatives.dart';
 import 'involve.dart';
-import '../utilities/colors.dart';
-import '../utilities/constants.dart';
-import '../utilities/drawer.dart';
-import '../utilities/navbar_content.dart';
-import '../utilities/text_style_util.dart';
+import '../../utilities/colors.dart';
+import '../../utilities/constants.dart';
+import '../../utilities/drawer.dart';
+import '../../utilities/navbar_content.dart';
+import '../../utilities/text_style_util.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

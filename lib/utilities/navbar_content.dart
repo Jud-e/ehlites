@@ -1,3 +1,4 @@
+import 'package:ehlites/pages/about/about_us.dart';
 import 'package:ehlites/utilities/constants.dart';
 import 'package:ehlites/utilities/text_style_util.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,12 @@ class _TopNavContentState extends State<TopNavContent> {
                   Text("insert icon"),
                   Row(
                     children: [
-                      Text("ABOUT US", style: thickStyle(14, Colors.black)),
+                      GestureDetector(
+                          // onTap: () {
+                          //   Navigator.pushNamed(context, "/about us");
+                          // },
+                          child: Text("ABOUT US",
+                              style: thickStyle(14, Colors.black))),
                       xMargin(15.0),
                       Text("PROGRAMS", style: thickStyle(14, Colors.black)),
                       xMargin(15.0),
