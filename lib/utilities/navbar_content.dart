@@ -24,7 +24,6 @@ class _TopNavContentState extends State<TopNavContent> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // ignore: prefer_const_constructors
                   Text("insert icon"),
                   Row(
                     children: [
@@ -50,10 +49,10 @@ class _TopNavContentState extends State<TopNavContent> {
               height: double.infinity,
               child: ElevatedButton(
                   onPressed: () {},
-                  child: const Text("Join now"),
                   style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.zero)))))
+                      shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.zero))),
+                  child: const Text("Join now")))
         ],
       ),
     );
