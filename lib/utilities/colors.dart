@@ -7,3 +7,5 @@ var yellow = const Color.fromARGB(255, 194, 209, 98);
 var primary = const Color(0xffFDFFFC);
 var secondary = const Color(0xffA833B9);
 var black = Colors.black;
+
+var green = const Color.fromARGB(255, 76, 175, 132);

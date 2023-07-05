@@ -101,6 +101,12 @@ class _AboutState extends State<About> {
                 style: thickStyle(50, black),
               )),
             ),
+            Container(
+              decoration: BoxDecoration(color: green),
+              child: Column(
+                children: [Row(), Row()],
+              ),
+            )
           ],
         ),
       ),
