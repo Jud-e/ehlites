@@ -311,7 +311,22 @@ class _AboutState extends State<About> {
                 ),
               ),
             ),
-            Container()
+            Container(
+              decoration: BoxDecoration(color: purple),
+              width: double.infinity,
+              child: Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "SUPPOTING MOVEMENTS DRIVING GENDER EQUALITY, EQUITY, AND JUSTICE FOR ALL",
+                      style: thickStyle(30, primary),
+                    )
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
