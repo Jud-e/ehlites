@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:ehlites/utilities/constants.dart';
 import 'package:ehlites/utilities/text_style_util.dart';
 import 'package:flutter/material.dart';
@@ -333,8 +335,28 @@ class _AboutState extends State<About> {
                       style: normalStyle(20, primary),
                     ),
                     yMargin(50),
-                    Row(
-                      children: [Column(), Column()],
+                    Wrap(
+                      children: [
+                        Column(
+                          children: [
+                            Image.asset(
+                              "images/bgimage1.jpg",
+                              height: 100,
+                              width: 400,
+                            )
+                          ],
+                        ),
+                        xMargin(10),
+                        Column(
+                          children: [
+                            Image.asset(
+                              "images/bgimage1.jpg",
+                              height: 100,
+                              width: 400,
+                            )
+                          ],
+                        )
+                      ],
                     )
                   ],
                 ),
