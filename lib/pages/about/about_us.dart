@@ -1,5 +1,6 @@
 import 'dart:html';
 
+import 'package:ehlites/pages/about/team.dart';
 import 'package:ehlites/utilities/constants.dart';
 import 'package:ehlites/utilities/text_style_util.dart';
 import 'package:flutter/material.dart';
@@ -334,25 +335,30 @@ class _AboutState extends State<About> {
                       textAlign: TextAlign.center,
                       style: normalStyle(20, primary),
                     ),
-                    yMargin(50),
+                    // yMargin(10),
                     Wrap(
+                      runSpacing: 0,
                       children: [
                         Column(
                           children: [
                             Image.asset(
                               "images/bgimage1.jpg",
-                              height: 100,
-                              width: 400,
+                              height: 700,
+                              width: 600,
                             )
                           ],
                         ),
-                        xMargin(10),
+                        // xMargin(10),
+                        // SizedBox(
+                        //   height: screenSize.width < 700 ? 20 : 0,
+                        //   width: screenSize.width < 700 ? 0 : 20,
+                        // ),
                         Column(
                           children: [
                             Image.asset(
                               "images/bgimage1.jpg",
-                              height: 100,
-                              width: 400,
+                              height: 700,
+                              width: 600,
                             )
                           ],
                         )
@@ -361,7 +367,8 @@ class _AboutState extends State<About> {
                   ],
                 ),
               ),
-            )
+            ),
+            Team()
           ],
         ),
       ),
