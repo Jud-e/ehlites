@@ -83,11 +83,13 @@ class _AboutState extends State<About> {
                     yMargin(20),
                     Text(
                       "WE PUT OUR MONEY\n WHERE OUR MOUTH IS",
+                      textAlign: TextAlign.center,
                       style: heavyStyle(25, primary),
                     ),
                     yMargin(20),
                     Text(
                       "Forget top-down philantrophy. We get core, flexible funding and\n resources to feminist activists to drive gender equality around the world.",
+                      textAlign: TextAlign.center,
                       style: heavyStyle(25, primary),
                     ),
                   ],
@@ -320,8 +322,19 @@ class _AboutState extends State<About> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "SUPPOTING MOVEMENTS DRIVING GENDER EQUALITY, EQUITY, AND JUSTICE FOR ALL",
+                      "SUPPOTING MOVEMENTS DRIVING GENDER EQUALITY\nEQUITY,AND JUSTICE FOR ALL",
+                      textAlign: TextAlign.center,
                       style: thickStyle(30, primary),
+                    ),
+                    yMargin(30),
+                    Text(
+                      "We're doubling down on our support for gender justice movements\n with the goal of shifting power towards women, girls and all marginalized people worldwide",
+                      textAlign: TextAlign.center,
+                      style: normalStyle(20, primary),
+                    ),
+                    yMargin(50),
+                    Row(
+                      children: [Column(), Column()],
                     )
                   ],
                 ),
