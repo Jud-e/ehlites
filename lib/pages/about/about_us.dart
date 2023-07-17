@@ -338,7 +338,11 @@ class _AboutState extends State<About> {
                     yMargin(10),
                     LayoutBuilder(builder:
                         (BuildContext context, BoxConstraints constraints) {
-                      return Container();
+                      if (constraints.maxWidth > 700) {
+                        return Row();
+                      } else {
+                        return Column();
+                      }
                     })
                   ],
                 ),
