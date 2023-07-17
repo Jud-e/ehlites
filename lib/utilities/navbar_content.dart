@@ -25,13 +25,17 @@ class _TopNavContentState extends State<TopNavContent> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("insert icon"),
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacementNamed(context, "/");
+                      },
+                      child: Text("insert icon")),
                   Row(
                     children: [
                       GestureDetector(
-                          // onTap: () {
-                          //   Navigator.pushNamed(context, "/about us");
-                          // },
+                          onTap: () {
+                            Navigator.pushNamed(context, "/about us");
+                          },
                           child: Text("ABOUT US",
                               style: thickStyle(14, Colors.black))),
                       xMargin(15.0),

@@ -349,15 +349,15 @@ class _AboutState extends State<About> {
                           ],
                         ),
                         // xMargin(10),
-                        // SizedBox(
-                        //   height: screenSize.width < 700 ? 20 : 0,
-                        //   width: screenSize.width < 700 ? 0 : 20,
-                        // ),
+                        SizedBox(
+                          // height: screenSize.width < 700 ? 20 : 0,
+                          width: screenSize.width < 700 ? 0 : 40,
+                        ),
                         Column(
                           children: [
                             Image.asset(
                               "images/bgimage1.jpg",
-                              height: 700,
+                              height: 500,
                               width: 600,
                             )
                           ],
