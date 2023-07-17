@@ -336,14 +336,20 @@ class _AboutState extends State<About> {
                       style: normalStyle(20, primary),
                     ),
                     yMargin(10),
-                    LayoutBuilder(builder:
-                        (BuildContext context, BoxConstraints constraints) {
-                      if (constraints.maxWidth > 700) {
-                        return Row();
-                      } else {
-                        return Column();
-                      }
-                    })
+                    Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: LayoutBuilder(builder:
+                          (BuildContext context, BoxConstraints constraints) {
+                        if (constraints.maxWidth > 700) {
+                          return Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [Column(), Column()],
+                          );
+                        } else {
+                          return Column();
+                        }
+                      }),
+                    )
                   ],
                 ),
               ),
