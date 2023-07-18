@@ -343,6 +343,7 @@ class _AboutState extends State<About> {
                           (BuildContext context, BoxConstraints constraints) {
                         if (constraints.maxWidth > 800) {
                           return Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               Column(
