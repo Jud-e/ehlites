@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:ehlites/pages/about/team.dart';
+import 'package:ehlites/pages/subscribe.dart';
 import 'package:ehlites/utilities/constants.dart';
 import 'package:ehlites/utilities/text_style_util.dart';
 import 'package:flutter/material.dart';
@@ -407,16 +408,29 @@ class _AboutState extends State<About> {
                     ),
                     yMargin(30),
                     Center(
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        child: Text("data"),
-                      ),
-                    )
+                        child: ElevatedButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                                backgroundColor:
+                                    MaterialStateProperty.all(secondary)),
+                            child: Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Text(
+                                "View all Movements",
+                                style: normalStyle(20, primary),
+                              ),
+                            )))
                   ],
                 ),
               ),
             ),
-            const Team()
+            const Team(),
+            Container(
+              color: black,
+              height: 229,
+              width: screenSize.width,
+              child: const Subscribe(),
+            ),
           ],
         ),
       ),
