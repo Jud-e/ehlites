@@ -12,7 +12,7 @@ class Team extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
             Text("data"),
@@ -34,17 +34,17 @@ class Team extends StatelessWidget {
                           children: [
                             Image.asset(
                               "images/pic1.jpg",
-                              fit: BoxFit.fill,
+                              fit: BoxFit.cover,
                               width: 250,
                               height: 180,
                             ),
                             // yMargin(10),
                             Text(
-                              "data",
+                              "John Doe",
                               style: normalStyle(18, primary),
                             ),
                             Text(
-                              "data",
+                              "Founder",
                               style: normalStyle(10, primary),
                             )
                           ],
@@ -54,50 +54,66 @@ class Team extends StatelessWidget {
                   ),
                   xMargin(80),
                   SizedBox(
-                    height: 200,
-                    width: 200,
+                    height: 250,
+                    width: 250,
                     child: Card(
-                      color: secondary,
-                      child: Center(
-                          child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.abc,
-                            color: green,
-                            size: 100,
-                          ),
-                          yMargin(10),
-                          Text(
-                            "data",
-                            style: heavyStyle(30, green),
-                          )
-                        ],
-                      )),
+                      color: purple,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/pic5.jpg",
+                              fit: BoxFit.cover,
+                              width: 250,
+                              height: 180,
+                            ),
+                            // yMargin(10),
+                            Text(
+                              "Janice Doe",
+                              style: normalStyle(18, primary),
+                            ),
+                            Text(
+                              "Co Founder",
+                              style: normalStyle(10, primary),
+                            )
+                          ],
+                        )),
+                      ),
                     ),
                   ),
                   xMargin(80),
                   SizedBox(
-                    height: 200,
-                    width: 200,
+                    height: 250,
+                    width: 250,
                     child: Card(
-                      color: secondary,
-                      child: Center(
-                          child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.abc,
-                            color: green,
-                            size: 100,
-                          ),
-                          yMargin(10),
-                          Text(
-                            "data",
-                            style: heavyStyle(30, green),
-                          )
-                        ],
-                      )),
+                      color: purple,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/pic3.jpg",
+                              fit: BoxFit.cover,
+                              width: 250,
+                              height: 180,
+                            ),
+                            // yMargin(10),
+                            Text(
+                              "Capybara",
+                              style: normalStyle(18, primary),
+                            ),
+                            Text(
+                              "Co Founder",
+                              style: normalStyle(10, primary),
+                            )
+                          ],
+                        )),
+                      ),
                     ),
                   ),
                 ],
@@ -109,74 +125,98 @@ class Team extends StatelessWidget {
               child: Row(
                 children: [
                   SizedBox(
-                    height: 200,
-                    width: 200,
+                    height: 250,
+                    width: 250,
                     child: Card(
-                      color: secondary,
-                      child: Center(
-                          child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.abc,
-                            color: green,
-                            size: 100,
-                          ),
-                          yMargin(10),
-                          Text(
-                            "data",
-                            style: heavyStyle(30, green),
-                          )
-                        ],
-                      )),
+                      color: purple,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/pic4.jpg",
+                              fit: BoxFit.cover,
+                              width: 250,
+                              height: 180,
+                            ),
+                            // yMargin(10),
+                            Text(
+                              "Aang",
+                              style: normalStyle(18, primary),
+                            ),
+                            Text(
+                              "The Avatar",
+                              style: normalStyle(10, primary),
+                            )
+                          ],
+                        )),
+                      ),
                     ),
                   ),
                   xMargin(80),
                   SizedBox(
-                    height: 200,
-                    width: 200,
+                    height: 250,
+                    width: 250,
                     child: Card(
-                      color: secondary,
-                      child: Center(
-                          child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.abc,
-                            color: green,
-                            size: 100,
-                          ),
-                          yMargin(10),
-                          Text(
-                            "data",
-                            style: heavyStyle(30, green),
-                          )
-                        ],
-                      )),
+                      color: purple,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/pic1.jpg",
+                              fit: BoxFit.cover,
+                              width: 250,
+                              height: 180,
+                            ),
+                            // yMargin(10),
+                            Text(
+                              "Benjamin",
+                              style: normalStyle(18, primary),
+                            ),
+                            Text(
+                              "Ben 10",
+                              style: normalStyle(10, primary),
+                            )
+                          ],
+                        )),
+                      ),
                     ),
                   ),
                   xMargin(80),
                   SizedBox(
-                    height: 200,
-                    width: 200,
+                    height: 250,
+                    width: 250,
                     child: Card(
-                      color: secondary,
-                      child: Center(
-                          child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.abc,
-                            color: green,
-                            size: 100,
-                          ),
-                          yMargin(10),
-                          Text(
-                            "data",
-                            style: heavyStyle(30, green),
-                          )
-                        ],
-                      )),
+                      color: purple,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/pic5.jpg",
+                              fit: BoxFit.cover,
+                              width: 250,
+                              height: 180,
+                            ),
+                            // yMargin(10),
+                            Text(
+                              "Adrian",
+                              style: normalStyle(18, primary),
+                            ),
+                            Text(
+                              "Chat noir",
+                              style: normalStyle(10, primary),
+                            )
+                          ],
+                        )),
+                      ),
                     ),
                   ),
                 ],
@@ -188,74 +228,98 @@ class Team extends StatelessWidget {
               child: Row(
                 children: [
                   SizedBox(
-                    height: 200,
-                    width: 200,
+                    height: 250,
+                    width: 250,
                     child: Card(
-                      color: secondary,
-                      child: Center(
-                          child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.abc,
-                            color: green,
-                            size: 100,
-                          ),
-                          yMargin(10),
-                          Text(
-                            "data",
-                            style: heavyStyle(30, green),
-                          )
-                        ],
-                      )),
+                      color: purple,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/pic3.jpg",
+                              fit: BoxFit.cover,
+                              width: 250,
+                              height: 180,
+                            ),
+                            // yMargin(10),
+                            Text(
+                              "Marinette",
+                              style: normalStyle(18, primary),
+                            ),
+                            Text(
+                              "Miraculous Ladybug",
+                              style: normalStyle(10, primary),
+                            )
+                          ],
+                        )),
+                      ),
                     ),
                   ),
                   xMargin(80),
                   SizedBox(
-                    height: 200,
-                    width: 200,
+                    height: 250,
+                    width: 250,
                     child: Card(
-                      color: secondary,
-                      child: Center(
-                          child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.abc,
-                            color: green,
-                            size: 100,
-                          ),
-                          yMargin(10),
-                          Text(
-                            "data",
-                            style: heavyStyle(30, green),
-                          )
-                        ],
-                      )),
+                      color: purple,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/pic5.jpg",
+                              fit: BoxFit.cover,
+                              width: 250,
+                              height: 180,
+                            ),
+                            // yMargin(10),
+                            Text(
+                              "Plagg Doe",
+                              style: normalStyle(18, primary),
+                            ),
+                            Text(
+                              "Accountant",
+                              style: normalStyle(10, primary),
+                            )
+                          ],
+                        )),
+                      ),
                     ),
                   ),
                   xMargin(80),
                   SizedBox(
-                    height: 200,
-                    width: 200,
+                    height: 250,
+                    width: 250,
                     child: Card(
-                      color: secondary,
-                      child: Center(
-                          child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.abc,
-                            color: green,
-                            size: 100,
-                          ),
-                          yMargin(10),
-                          Text(
-                            "data",
-                            style: heavyStyle(30, green),
-                          )
-                        ],
-                      )),
+                      color: purple,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                            child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "images/pic2.jpg",
+                              fit: BoxFit.cover,
+                              width: 250,
+                              height: 180,
+                            ),
+                            // yMargin(10),
+                            Text(
+                              "Jane Doe",
+                              style: normalStyle(18, primary),
+                            ),
+                            Text(
+                              "Chain supplier",
+                              style: normalStyle(10, primary),
+                            )
+                          ],
+                        )),
+                      ),
                     ),
                   ),
                 ],
