@@ -342,8 +342,29 @@ class _AboutState extends State<About> {
                           (BuildContext context, BoxConstraints constraints) {
                         if (constraints.maxWidth > 700) {
                           return Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [Column(), Column()],
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Column(
+                                children: [
+                                  Image.asset(
+                                    'images/bgimage1.jpg',
+                                    height: 200,
+                                    width: 500,
+                                    fit: BoxFit.fill,
+                                  )
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  Image.asset(
+                                    'images/bgimage1.jpg',
+                                    height: 200,
+                                    width: 500,
+                                    fit: BoxFit.fill,
+                                  )
+                                ],
+                              )
+                            ],
                           );
                         } else {
                           return Column();
