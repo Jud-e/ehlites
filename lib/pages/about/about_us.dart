@@ -80,20 +80,20 @@ class _AboutState extends State<About> {
                   children: [
                     Text(
                       "WHAT WE DO",
-                      style: thickStyle(20, primary,
+                      style: antonStyle(20, primary,
                           decoration: TextDecoration.underline),
                     ),
                     yMargin(20),
                     Text(
                       "WE PUT OUR MONEY\n WHERE OUR MOUTH IS",
                       textAlign: TextAlign.center,
-                      style: heavyStyle(25, primary),
+                      style: antonStyle(60, primary),
                     ),
                     yMargin(20),
                     Text(
                       "Forget top-down philantrophy. We get core, flexible funding and\n resources to feminist activists to drive gender equality around the world.",
                       textAlign: TextAlign.center,
-                      style: heavyStyle(25, primary),
+                      style: antonStyle(25, primary),
                     ),
                   ],
                 )),
@@ -320,20 +320,20 @@ class _AboutState extends State<About> {
               decoration: BoxDecoration(color: purple),
               width: double.infinity,
               child: Padding(
-                padding: const EdgeInsets.all(30.0),
+                padding: const EdgeInsets.all(60.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "SUPPOTING MOVEMENTS DRIVING GENDER EQUALITY\nEQUITY,AND JUSTICE FOR ALL",
+                      "SUPPOTING MOVEMENTS DRIVING GENDER EQUALITY, EQUITY, AND JUSTICE FOR ALL",
                       textAlign: TextAlign.center,
-                      style: thickStyle(30, primary),
+                      style: antonStyle(25, primary),
                     ),
                     yMargin(30),
                     Text(
-                      "We're doubling down on our support for gender justice movements\n with the goal of shifting power towards women, girls and all marginalized people worldwide",
+                      "We're doubling down on our support for gender justice movements with the goal of\n shifting power towards women, girls and all marginalized people worldwide",
                       textAlign: TextAlign.center,
-                      style: normalStyle(20, primary),
+                      style: normalStyle(18, primary),
                     ),
                     yMargin(10),
                     Padding(
@@ -345,12 +345,19 @@ class _AboutState extends State<About> {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Image.asset(
                                     'images/bgimage1.jpg',
-                                    height: 200,
+                                    height: 300,
                                     width: 500,
                                     fit: BoxFit.fill,
+                                  ),
+                                  yMargin(10),
+                                  Text(
+                                    "FEATURED MOVEMENT",
+                                    style: antonStyle(25, primary,
+                                        letterspacing: 1.5),
                                   )
                                 ],
                               ),
