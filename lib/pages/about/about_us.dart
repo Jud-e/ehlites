@@ -340,7 +340,7 @@ class _AboutState extends State<About> {
                       padding: const EdgeInsets.all(20.0),
                       child: LayoutBuilder(builder:
                           (BuildContext context, BoxConstraints constraints) {
-                        if (constraints.maxWidth > 700) {
+                        if (constraints.maxWidth > 800) {
                           return Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
@@ -353,22 +353,49 @@ class _AboutState extends State<About> {
                                     width: 500,
                                     fit: BoxFit.fill,
                                   ),
-                                  yMargin(10),
+                                  yMargin(15),
                                   Text(
                                     "FEATURED MOVEMENT",
-                                    style: antonStyle(25, primary,
+                                    style: antonStyle(15, primary,
                                         letterspacing: 1.5),
-                                  )
+                                  ),
+                                  yMargin(14),
+                                  Text(
+                                    "FEMINIST ACTION FOR\nCLIMATE JUSTICE IN\nTHE PACIFIC AND THE\nCARRIBBEAN",
+                                    style: antonStyle(
+                                      50,
+                                      primary,
+                                      height: 0.9,
+                                      wordspacing: 1.3,
+                                    ),
+                                  ),
                                 ],
                               ),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Image.asset(
                                     'images/bgimage1.jpg',
-                                    height: 200,
+                                    height: 300,
                                     width: 500,
                                     fit: BoxFit.fill,
-                                  )
+                                  ),
+                                  yMargin(15),
+                                  Text(
+                                    "FEATURED MOVEMENT",
+                                    style: antonStyle(15, primary,
+                                        letterspacing: 1.5),
+                                  ),
+                                  yMargin(14),
+                                  Text(
+                                    "ENDING SEXUAL AND\nGENDER-BASED\nVIOLENCE IN PERU",
+                                    style: antonStyle(
+                                      50,
+                                      primary,
+                                      height: 0.9,
+                                      wordspacing: 1.3,
+                                    ),
+                                  ),
                                 ],
                               )
                             ],
@@ -377,6 +404,13 @@ class _AboutState extends State<About> {
                           return Column();
                         }
                       }),
+                    ),
+                    yMargin(30),
+                    Center(
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text("data"),
+                      ),
                     )
                   ],
                 ),

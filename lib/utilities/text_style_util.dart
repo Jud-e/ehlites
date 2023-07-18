@@ -97,15 +97,13 @@ TextStyle interStyle(
       letterSpacing: letterspacing);
 }
 
-TextStyle antonStyle(
-  double size,
-  Color color, {
-  FontStyle? fontStyle,
-  TextDecoration? decoration,
-  double? letterspacing,
-  String? family,
-  double? height,
-}) {
+TextStyle antonStyle(double size, Color color,
+    {FontStyle? fontStyle,
+    TextDecoration? decoration,
+    double? letterspacing,
+    String? family,
+    double? height,
+    double? wordspacing}) {
   return GoogleFonts.anton(
       fontSize: size,
       fontStyle: fontStyle,
@@ -113,6 +111,7 @@ TextStyle antonStyle(
       fontWeight: FontWeight.w500,
       height: height ?? 1.5,
       decoration: decoration,
+      wordSpacing: wordspacing,
       letterSpacing: letterspacing);
 }
 
