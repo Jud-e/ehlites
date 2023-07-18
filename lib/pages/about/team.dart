@@ -15,8 +15,17 @@ class Team extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
-            Text("data"),
-            yMargin(20),
+            yMargin(40),
+            Text(
+              "Our Awesome Team",
+              style: heavyStyle(30, black),
+            ),
+            yMargin(6),
+            Text(
+              "Peep the faces behind our initiatives",
+              style: normalStyle(20, black),
+            ),
+            yMargin(60),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
