@@ -20,7 +20,6 @@ class Team extends StatelessWidget {
               "Our Awesome Team",
               style: heavyStyle(30, black),
             ),
-            yMargin(6),
             Text(
               "Peep the faces behind our initiatives",
               style: normalStyle(20, black),
