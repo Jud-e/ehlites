@@ -341,7 +341,7 @@ class _AboutState extends State<About> {
                       padding: const EdgeInsets.all(20.0),
                       child: LayoutBuilder(builder:
                           (BuildContext context, BoxConstraints constraints) {
-                        if (constraints.maxWidth > 800) {
+                        if (constraints.maxWidth > 1000) {
                           return Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -403,7 +403,57 @@ class _AboutState extends State<About> {
                             ],
                           );
                         } else {
-                          return Column();
+                          return Center(
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  'images/bgimage1.jpg',
+                                  height: 300,
+                                  width: 500,
+                                  fit: BoxFit.fill,
+                                ),
+                                yMargin(15),
+                                Text(
+                                  "FEATURED MOVEMENT",
+                                  style: antonStyle(15, primary,
+                                      letterspacing: 1.5),
+                                ),
+                                yMargin(14),
+                                Text(
+                                  "FEMINIST ACTION FOR\nCLIMATE JUSTICE IN\nTHE PACIFIC AND THE\nCARRIBBEAN",
+                                  style: antonStyle(
+                                    50,
+                                    primary,
+                                    height: 0.9,
+                                    wordspacing: 1.3,
+                                  ),
+                                ),
+                                yMargin(20),
+                                Image.asset(
+                                  'images/bgimage1.jpg',
+                                  height: 300,
+                                  width: 500,
+                                  fit: BoxFit.fill,
+                                ),
+                                yMargin(15),
+                                Text(
+                                  "FEATURED MOVEMENT",
+                                  style: antonStyle(15, primary,
+                                      letterspacing: 1.5),
+                                ),
+                                yMargin(14),
+                                Text(
+                                  "ENDING SEXUAL AND\nGENDER-BASED\nVIOLENCE IN PERU",
+                                  style: antonStyle(
+                                    50,
+                                    primary,
+                                    height: 0.9,
+                                    wordspacing: 1.3,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          );
                         }
                       }),
                     ),
