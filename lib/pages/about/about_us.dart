@@ -1,12 +1,9 @@
-import 'dart:html';
-
 import 'package:ehlites/pages/about/team.dart';
 import 'package:ehlites/pages/subscribe.dart';
+import 'package:ehlites/utilities/card_series.dart';
 import 'package:ehlites/utilities/constants.dart';
 import 'package:ehlites/utilities/text_style_util.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../../utilities/colors.dart';
 import '../../utilities/drawer.dart';
@@ -118,98 +115,10 @@ class _AboutState extends State<About> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          SizedBox(
-                            height: 300,
-                            width: 300,
-                            child: Card(
-                              color: secondary,
-                              child: Center(
-                                  child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.abc,
-                                    color: green,
-                                    size: 100,
-                                  ),
-                                  yMargin(10),
-                                  Text(
-                                    "data",
-                                    style: heavyStyle(30, green),
-                                  )
-                                ],
-                              )),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 300,
-                            width: 300,
-                            child: Card(
-                              color: secondary,
-                              child: Center(
-                                  child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.abc,
-                                    color: green,
-                                    size: 100,
-                                  ),
-                                  yMargin(10),
-                                  Text(
-                                    "data",
-                                    style: heavyStyle(30, green),
-                                  )
-                                ],
-                              )),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 300,
-                            width: 300,
-                            child: Card(
-                              color: secondary,
-                              child: Center(
-                                  child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.abc,
-                                    color: green,
-                                    size: 100,
-                                  ),
-                                  yMargin(10),
-                                  Text(
-                                    "data",
-                                    style: heavyStyle(30, green),
-                                  )
-                                ],
-                              )),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 300,
-                            width: 300,
-                            child: Card(
-                              color: secondary,
-                              child: Center(
-                                  child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.abc,
-                                    color: green,
-                                    size: 100,
-                                  ),
-                                  yMargin(10),
-                                  Text(
-                                    "data",
-                                    style: heavyStyle(30, green),
-                                  )
-                                ],
-                              )),
-                            ),
-                          )
+                          cardSeries(),
+                          cardSeries(),
+                          cardSeries(),
+                          cardSeries(),
                         ],
                       ),
                     ),
@@ -218,98 +127,10 @@ class _AboutState extends State<About> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          SizedBox(
-                            height: 300,
-                            width: 300,
-                            child: Card(
-                              color: secondary,
-                              child: Center(
-                                  child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.abc,
-                                    color: green,
-                                    size: 100,
-                                  ),
-                                  yMargin(10),
-                                  Text(
-                                    "data",
-                                    style: heavyStyle(30, green),
-                                  )
-                                ],
-                              )),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 300,
-                            width: 300,
-                            child: Card(
-                              color: secondary,
-                              child: Center(
-                                  child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.abc,
-                                    color: green,
-                                    size: 100,
-                                  ),
-                                  yMargin(10),
-                                  Text(
-                                    "data",
-                                    style: heavyStyle(30, green),
-                                  )
-                                ],
-                              )),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 300,
-                            width: 300,
-                            child: Card(
-                              color: secondary,
-                              child: Center(
-                                  child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.abc,
-                                    color: green,
-                                    size: 100,
-                                  ),
-                                  yMargin(10),
-                                  Text(
-                                    "data",
-                                    style: heavyStyle(30, green),
-                                  )
-                                ],
-                              )),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 300,
-                            width: 300,
-                            child: Card(
-                              color: secondary,
-                              child: Center(
-                                  child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.abc,
-                                    color: green,
-                                    size: 100,
-                                  ),
-                                  yMargin(10),
-                                  Text(
-                                    "data",
-                                    style: heavyStyle(30, green),
-                                  )
-                                ],
-                              )),
-                            ),
-                          )
+                          cardSeries(),
+                          cardSeries(),
+                          cardSeries(),
+                          cardSeries(),
                         ],
                       ),
                     ),
