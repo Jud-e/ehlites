@@ -3,13 +3,13 @@ import 'package:ehlites/utilities/constants.dart';
 import 'package:ehlites/utilities/text_style_util.dart';
 import 'package:flutter/material.dart';
 
-Widget cardSeries(String text) {
+Widget cardSeries(String text, Color color) {
   return SizedBox(
     height: 300,
     width: 300,
     child: Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
-      color: primary,
+      color: color,
       child: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
