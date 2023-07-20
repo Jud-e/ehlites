@@ -57,10 +57,14 @@ class _AboutState extends State<About> {
                               ),
                             ],
                           ),
-                          const SizedBox(
-                            child: Padding(
-                              padding: EdgeInsets.all(20),
-                              child: Text("Insert image"),
+                          Visibility(
+                            visible: screenSize.width < 1200 ? false : true,
+                            child: SizedBox(
+                              child: Image.asset(
+                                "images/bgimage1.jpg",
+                                height: 400,
+                                width: 500,
+                              ),
                             ),
                           )
                         ],
