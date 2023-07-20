@@ -115,10 +115,10 @@ class _AboutState extends State<About> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          cardSeries(),
-                          cardSeries(),
-                          cardSeries(),
-                          cardSeries(),
+                          cardSeries("Deeply Empathise"),
+                          cardSeries("Make every\ninteraction count"),
+                          cardSeries("Act with\nintegrity"),
+                          cardSeries("Advocate\nfor others"),
                         ],
                       ),
                     ),
@@ -127,10 +127,10 @@ class _AboutState extends State<About> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          cardSeries(),
-                          cardSeries(),
-                          cardSeries(),
-                          cardSeries(),
+                          cardSeries("Create joy"),
+                          cardSeries("Do more than\nyou're asked"),
+                          cardSeries("Be your\nbest you"),
+                          cardSeries("Take care of\neach other"),
                         ],
                       ),
                     ),

@@ -8,4 +8,4 @@ var primary = const Color(0xffFDFFFC);
 var secondary = const Color(0xffA833B9);
 var black = Colors.black;
 
-var green = const Color.fromARGB(255, 76, 175, 132);
+var green = Color.fromARGB(255, 8, 85, 63);
