@@ -16,14 +16,14 @@ Widget cardSeries(String text, Color color) {
         children: [
           Icon(
             Icons.abc,
-            color: green,
+            color: purple,
             size: 100,
           ),
           yMargin(10),
           Text(
             text,
             textAlign: TextAlign.center,
-            style: heavyStyle(20, green),
+            style: normalStyle(20, purple),
           )
         ],
       )),

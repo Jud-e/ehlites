@@ -97,15 +97,15 @@ class _AboutState extends State<About> {
                 )),
             SizedBox(
               width: double.infinity,
-              height: 200,
+              height: 150,
               child: Center(
                   child: Text(
                 "Core Values",
-                style: thickStyle(50, black),
+                style: antonStyle(50, black),
               )),
             ),
             Container(
-              decoration: BoxDecoration(color: green),
+              decoration: BoxDecoration(color: primary),
               width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
