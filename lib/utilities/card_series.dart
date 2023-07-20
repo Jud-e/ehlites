@@ -8,7 +8,7 @@ Widget cardSeries() {
     height: 300,
     width: 300,
     child: Card(
-      color: secondary,
+      color: primary,
       child: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -21,7 +21,7 @@ Widget cardSeries() {
           yMargin(10),
           Text(
             "data",
-            style: heavyStyle(30, green),
+            style: heavyStyle(20, green),
           )
         ],
       )),
